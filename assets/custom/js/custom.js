@@ -6,15 +6,16 @@ $(document).ready(function () {
         mobile: false,
     }).init();
 
-    $(".fables-mega-menu li a").click(function () {
-        $(".fables-mega-menu li > div").toggleClass("show-sub");
+    $(".custom-mega-menu li a").click(function () {
+        $(".custom-mega-menu li > div").toggleClass("show-sub");
     });
 
     // 3 items carousel carousel-items-3
     $(".carousel-items-3").owlCarousel({
         margin: 20,
+        rtl: false,
         loop: false,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>'],
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>'],
         responsive: {
             0: {
                 items: 3
@@ -32,8 +33,12 @@ $(document).ready(function () {
     // 3 items carousel carousel-items-3
     $(".carousel-items-4").owlCarousel({
         margin: 20,
+        rtl: false,
         loop: true,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>'],
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>'],
         responsive: {
             0: {
                 items: 1
@@ -77,7 +82,7 @@ $(document).ready(function () {
     $(".carousel-items-6").owlCarousel({
         margin: 20,
         loop: true,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>'],
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>'],
         responsive: {
             0: {
                 items: 2
@@ -99,7 +104,7 @@ $(document).ready(function () {
         autoplay: true,
         dots: true,
         nav: true,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>'],
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>'],
         items: 1
     });
 
@@ -110,7 +115,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         margin: 20,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>'],
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>'],
         dots: true,
         responsive: {
             0: {
@@ -129,7 +134,7 @@ $(document).ready(function () {
         loop: true,
         margin: 20,
         nav: false,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-next"></span>'],
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-next"></span>'],
         autoplay: true,
         dots: true,
         responsive: {
@@ -155,18 +160,18 @@ $(document).ready(function () {
         }
     });
 
-    $(".fables-view-btn").click(function () {
+    $(".custom-view-btn").click(function () {
         $(this).addClass('active').siblings().removeClass('active');
 
-        if ($(this).hasClass("fables-list-btn")) {
-            $(".fables-product-block").removeClass("col-md-6 col-lg-4").addClass("list");
-            $(".fables-product-img").removeClass("col-12").addClass("col-4");
-            $(".fables-product-block .card-body").removeClass("col-12").addClass("col-8");
+        if ($(this).hasClass("custom-list-btn")) {
+            $(".custom-product-block").removeClass("col-md-6 col-lg-4").addClass("list");
+            $(".custom-product-img").removeClass("col-12").addClass("col-4");
+            $(".custom-product-block .card-body").removeClass("col-12").addClass("col-8");
         }
         else {
-            $(".fables-product-block").addClass("col-md-6 col-lg-4").removeClass("list");
-            $(".fables-product-img").removeClass("col-4").addClass("col-12");
-            $(".fables-product-block .card-body").removeClass("col-8").addClass("col-12");
+            $(".custom-product-block").addClass("col-md-6 col-lg-4").removeClass("list");
+            $(".custom-product-img").removeClass("col-4").addClass("col-12");
+            $(".custom-product-block .card-body").removeClass("col-8").addClass("col-12");
         }
     });
 
@@ -264,23 +269,23 @@ $(document).ready(function () {
 
 
 
-    $('#fables-testimonial-carousel').owlCarousel({
+    $('#custom-testimonial-carousel').owlCarousel({
         loop: true,
         dots: true,
         margin: 20,
         autoplay: true,
         items: 1,
-        navText: ['<span class="fables-iconarrow-left"></span>', '<span class="fables-iconarrow-right"></span>']
+        navText: ['<span class="custom-iconarrow-left"></span>', '<span class="custom-iconarrow-right"></span>']
 
     });
 
-    $('#fables-partner-carousel').owlCarousel({
+    $('#custom-partner-carousel').owlCarousel({
         loop: true,
         dots: false,
         autoplay: true,
         margin: 20,
         nav: true,
-        navText: ['<i class="fa fa-chevron-left fables-main-text-color fables-main-border-color fables-partner-nav-icon" aria-hidden="true"></i>', '<i class="fa fa-chevron-right fables-main-text-color fables-main-border-color fables-partner-nav-icon" aria-hidden="true"></i>'],
+        navText: ['<i class="fa fa-chevron-left custom-main-text-color custom-main-border-color custom-partner-nav-icon" aria-hidden="true"></i>', '<i class="fa fa-chevron-right custom-main-text-color custom-main-border-color custom-partner-nav-icon" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1

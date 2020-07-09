@@ -28,9 +28,9 @@ $(window).scroll(animateElements);
    var a = 0;
    $(window).scroll(function() {
 
-    var oTop = $('.fables-counter').offset().top - window.innerHeight;
+    var oTop = $('.custom-counter').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
-      $('.fables-counter-value').each(function() {
+      $('.custom-counter-value').each(function() {
         var $this = $(this),
           countTo = $this.attr('data-count');
         $({
