@@ -95,6 +95,12 @@ body{
 .custom-light-background-color a{
     color: #2C3E4F !important; 
 }
+
+.custom-secondary-background-color {
+    /* background-color: #455464 !important;  */
+    background-color: #0e173c !important; 
+}
+
 .dropdown-toggle::after {
     display: none;
 }
