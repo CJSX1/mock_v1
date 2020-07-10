@@ -93,9 +93,9 @@
 .img-res {
     height: 173.98px !important; 
 }
-.custom-workshop-margin{
+/* .custom-workshop-margin{
     padding-top: 14% !important;
-}
+} */
 }
 @media (max-width:992px){
 .choose-img-border-after::after{
