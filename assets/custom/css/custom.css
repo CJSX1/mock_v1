@@ -392,8 +392,8 @@ body{
     -webkit-transition: all ease-in-out .3s;
     -o-transition: all ease-in-out .3s;
     -moz-transition: all ease-in-out .3s;
-    border-width: 1px;
-    border-style: solid;
+    /* border-width: 1px;
+    border-style: solid; */
 }
 .custom-carousel-border .owl-item:hover .custom-partner-carousel-img{
     opacity: 1;
@@ -2479,8 +2479,8 @@ body{
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    margin-top: 18%;
-    margin-right: 11%;
+    margin-top: 24%;
+    /* margin-right: 11%; */
 }
 .sm-index-products .all-index-products{
     right: 0;
@@ -2910,11 +2910,17 @@ a:hover , .btn-link:hover{
     background-color:#99A2AA;
 }
 .custom-fifth-text-color{
-    color: #99A2AA;
+    /* color: #99A2AA; */
+    color: #6b6b6b;
 }
 .custom-fifth-border-color{
     border-color:#99A2AA;
 }
+
+.custom-sixth-text-color{
+    color:#c1c1c1;
+}
+
 .custom-light-gary-background{
     background-color: #ECF0F1;
 }
