@@ -1,10 +1,8 @@
 $(document).ready(function () {
 
-    "use strict";
+    // "use strict";
     // wow 
-    new WOW({
-        mobile: false,
-    }).init();
+    new WOW().init();
 
     $(".custom-mega-menu li a").click(function () {
         $(".custom-mega-menu li > div").toggleClass("show-sub");

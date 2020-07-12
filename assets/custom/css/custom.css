@@ -189,8 +189,9 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(44,62,79,.8);
+    background-color: rgb(14, 23, 60);
 }
+
 .overlay-lighter:after{
     background-color: rgba(44,62,79,.7);
 }
@@ -2467,7 +2468,7 @@ body{
     position: absolute;
     width: 110%;
     height: 110%;
-    border-width: 2px;
+    border-width: 14px;
     border-style: solid;
     bottom: -5%;
     right: -5%;
@@ -3442,4 +3443,8 @@ a.toggle-menu{
     border-right: 0 !important;
     border-left: 0 !important;
     border-radius: 0;
+}
+
+.custom-X1-border-color {
+    border-color: #ffffff !important;
 }
